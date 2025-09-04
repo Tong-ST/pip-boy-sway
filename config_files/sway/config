@@ -30,7 +30,7 @@ exec waybar
 exec waybar -c ~/.config/waybar/waybar_bottom/config -s ~/.config/waybar/waybar_bottom/style.css
 
 # Adjust -l -L for your location before using wlsunset hint: see lat,lon on google map when right click
-# exec wlsunset -l 16.54 -L 104.69 -t 4000 -T 5500
+# exec wlsunset -l 0.00 -L 0.00 -t 4000 -T 5500
 
 # Adjust for polkit you're using
 #exec /usr/libexec/polkit-mate-authentication-agent-1 
