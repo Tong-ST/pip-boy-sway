@@ -63,6 +63,8 @@ This section you will do more customization for finishing touch this setup
         - You don't need any color theme in firefox just leave it system theme - auto, Hackerer theme we use at GTK also cover firefox
     - In Firefox window/UI might be greenery but it doesn't effect your main web-surfing that much
 
+3. Update Grub-theme (Optional But Cool~)
+    - I also found really awesome grub theme that match fallout terminal style see here [Fallout Grub](https://www.pling.com/p/1230882/)
 
 ## WHAT'S NEXT
 1. Go adjust for your peference those .config `nano ~/.config/sway/config`
@@ -85,3 +87,11 @@ This section you will do more customization for finishing touch this setup
     ![pip_color](assets/pip_color.png)
 
 **So, Now you an officially VAULT-TEC employee like mine, have fun!**
+
+### Thanks & Support
+- [Hackerer](https://www.pling.com/p/2010119/) Awesome GTK Theme that match well with my setup
+- [Textfox](https://github.com/adriankarlen/textfox) Awesome Firefox theme 
+- [Fallout Grub](https://www.pling.com/p/1230882/) Awesome grub-theme that so, cool!
+- [Besgnulinux Monochrome Icon Theme](https://www.gnome-look.org/p/2151189) Awesome monochrome icon pack that go well with this setup
+
+- You guy feel free to Clone / Folk / Stars just don't forget about credit :D
