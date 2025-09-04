@@ -73,7 +73,9 @@ This section you will do more customization for finishing touch this setup
 2. Make it your currently button on waybar is set to run my program, So some button might not work for you `nano ~/.config/waybar/config` & `style.css` as well
     - waybar also have `nano ~/.config/waybar/waybar_buttom/config` that another bar for bottom bar you can use it or disable as you want
 
-3. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
+3. Just found really cool font that go really well with this setup call `Fixedsys Excelsior 3.01` It's good i promised but you have to change config by yourself first, It might be good to get familiar with all the config, For waybar you might have to adjust margin stuff till it match..
+
+4. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
 
 - My Default Key-Binding
     - ``` WIN+SHIFT+E ``` = logout 
