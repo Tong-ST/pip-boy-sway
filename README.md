@@ -30,8 +30,6 @@ Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak insta
     ```
 2. Copy .config file or Manually copy files in configs folder to `~/.config/`
     ```
-    mkdir ~/.config/sway/
-    mkdir ~/.config/waybar/
     cp -r /config_files/sway/ ~/.config/ 
     cp -r /config_files/waybar/ ~/.config/
     ```
@@ -41,10 +39,6 @@ Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak insta
     ![pip_fetch](assets/pip_fetch.png)
     ![Wofi_setup](assets/pip_wofi.png)
     ```
-    mkdir ~/.config/alacritty/
-    mkdir ~/.config/wofi/
-    mkdir ~/.config/wlogout/
-    mkdir ~/.config/fastfetch/
     cp -r /config_files/alacritty/ ~/.config/ 
     cp -r /config_files/wofi/ ~/.config/
     cp -r /config_files/wlogout/ ~./config/
