@@ -1,0 +1,6 @@
+#allow_images=true
+#image_size=24
+prompt=
+hide_scroll=true
+width=768
+expander_box=false

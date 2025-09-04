@@ -1,0 +1,53 @@
+* {
+	border-radius:0px;
+}
+
+window {
+	font-size: 24px;
+	font-family: "Roboto", Regular;
+	background-color: rgba(14, 21, 14,0.98);
+	border: 2px solid #41EC55;
+	color: #41EC55;
+}
+
+#entry{
+	padding: 0.25em;
+	min-height: 36px;
+}
+
+#entry:selected {
+	color: #0E150E;
+	background-color: #00FF00;
+}
+
+#expander-box {
+	background-color: rgba(14, 21, 14, 0.85);
+	color: #41EC55;
+}
+
+
+#text:selected {
+	color: #0E150E;	
+}
+
+
+#input{
+	background: #0E150E;
+	color: #41EC55;
+	border: 2px solid #41EC55;
+	padding: 0.25em;
+}
+
+#input:focus {
+	box-shadow: 0px 0px 0px 1px #41EC55 inset;
+
+}
+
+#input image {
+    color: #41EC55;
+}
+
+image{
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+}

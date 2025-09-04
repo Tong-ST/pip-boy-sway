@@ -1,0 +1,60 @@
+{
+  "layer": "bottom",
+  "position": "bottom",
+  "mode": "dock",
+  "height": 34,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-bottom": 4,
+  "margin-top": -10,
+  "modules-left": ["custom/separator-left", "custom/vault", "custom/employee"],
+  "modules-center": ["custom/term","custom/separator","custom/files","custom/separator", "custom/browser", "custom/separator","custom/editor", "custom/separator", "custom/radio"],
+  "modules-right": ["custom/pip", "custom/separator-right"],
+
+  "custom/separator": {
+    "format": "|" 
+  },
+
+  "custom/separator-right": {
+    "format": "|" 
+  },
+
+  "custom/separator-left": {
+    "format": "|" 
+  },
+
+  "custom/radio": {
+    "format": "RADIO",
+    "on-click": "flatpak run com.rafaelmardojai.Blanket",
+  },
+
+  "custom/editor": {
+    "format": "DATA",
+    "on-click": "code", 
+  },
+  "custom/term" :{
+    "format": "STATS",
+    "on-click": "alacritty",
+  },
+  "custom/files" :{
+    "format": "INV",
+    "on-click": "alacritty -e ranger",
+  },
+  "custom/browser" :{
+    "format": "MAP",
+    "on-click": "firefox",
+
+  },
+
+  "custom/pip": {
+    "format": "Pip-Boy-3000",
+  },
+  "custom/vault": {
+    "format": "© VAULT-TEC"
+  },
+  "custom/employee": {
+     "format": "  :  Employee No.069"
+  },
+
+}
+

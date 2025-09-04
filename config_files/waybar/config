@@ -1,0 +1,100 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "height": 45,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-top": 8,
+  "margin-bottom": -4,
+  "modules-left": ["custom/separator-left", "custom/stats", "battery", "memory", "disk", "custom/separator", "cpu"], 
+  "modules-center": ["custom/separator", "sway/workspaces", "custom/separator"],
+  "modules-right": ["custom/separator", "custom/skills" ,"pulseaudio", "network", "clock", "custom/logout","custom/separator-right"],
+
+  "custom/separator": {
+    "format": "|" 
+  },
+
+  "custom/separator-right": {
+    "format": "|" 
+  },
+
+  "custom/separator-left": {
+    "format": "|" 
+  },
+
+  "custom/stats": {
+    "format": "STATS",
+  },
+
+  "custom/skills": {
+    "format": "SKILLS",
+  },
+
+  "clock": {
+    "format": "   {:%a %d %b %H:%M}",
+    "on-click": "alacritty -e calcurse"
+  },
+  "cpu": {
+    "format": "  RAD  {usage}/100",
+  },
+  "memory": {
+    "format": "AP {avail:0.0f}/{total:0.0f} ",
+    "on-click": "alacritty -e htop"
+  },
+  "disk": {
+	"interval": 30,
+	"format": "XP {specific_used:0.0f}/{specific_total:0.0f}  ",
+	"unit": "GB"
+  },
+  "battery": {
+    "format": "{icon}     HP {capacity}/100",
+    "format-icons": ["", "", "", "", ""],
+    "on-click": "flatpak run com.github.d4nj1.tlpui"
+  },
+  "network": {
+//    "format-wifi": "   {essid}",
+    "format-wifi": "   VAULT-101",
+    "format-ethernet": " {ifname}: {ipaddr}",
+    "format-disconnected": "⚠ Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "{icon}   {volume}%",
+    "format-icons": {
+    "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+   "custom/logout": {
+    "format": "",
+    "tooltip": "Logout",
+    "on-click": "wlogout"
+  },
+  
+ "sway/workspaces": {
+	"all-outputs": false,
+	"disable-scroll": false,
+	"persistent-workspaces": {
+	"1": [],
+	"2": [],
+	"3": [],
+	"4": [],
+	"5": [],
+	"6": [],
+	"7": [],
+	},
+	"format": "{icon}",
+	"format-icons": {
+	  "1": "S  .",
+	  "2": "P  .",
+	  "3": "E  .",
+	  "4": "C  .",
+	  "5": "I  .",
+	  "6": "A  .",
+	  "7": "L  .",
+	},
+ },    
+
+}
+
