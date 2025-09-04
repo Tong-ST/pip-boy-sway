@@ -75,6 +75,8 @@ This section you will do more customization for finishing touch this setup
 
 3. Just found really cool font that go really well with this setup call `Fixedsys Excelsior 3.01` It's good i promised but you have to change config by yourself first, It might be good to get familiar with all the config, For waybar you might have to adjust margin stuff till it match..
 
+    - So, Update for some config of `waybar` for this Fixedsys Font just use config in folder `config_fixedsys_font` instead.
+    - Here's The look, RAD symbol got overwriten, Use warning sign for Now, ![font_sample](assets/pip_fixedsys_font.png)
 4. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
 
 - My Default Key-Binding
