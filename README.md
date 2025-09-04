@@ -94,4 +94,4 @@ This section you will do more customization for finishing touch this setup
 - [Fallout Grub](https://www.pling.com/p/1230882/) Awesome grub-theme that so, cool!
 - [Besgnulinux Monochrome Icon Theme](https://www.gnome-look.org/p/2151189) Awesome monochrome icon pack that go well with this setup
 
-- You guy feel free to Clone / Folk / Stars just don't forget about credit :D
+- You guy feel free to Clone / Fork / Star just don't forget about credit :D
