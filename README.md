@@ -30,8 +30,8 @@ Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak insta
     ```
 2. Copy .config file or Manually copy files in configs folder to `~/.config/`
     ```
-    cp -r /config_files/sway/ ~/.config/ 
-    cp -r /config_files/waybar/ ~/.config/
+    cp -r config_files/sway/ ~/.config/ 
+    cp -r config_files/waybar/ ~/.config/
     ```
     At this step let's see Sway + Waybar work together correctly. by Logout and Login back if you see waybar appear and sway doesn't prompt an error your good to go..
 
@@ -39,10 +39,10 @@ Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak insta
     ![pip_fetch](assets/pip_fetch.png)
     ![Wofi_setup](assets/pip_wofi.png)
     ```
-    cp -r /config_files/alacritty/ ~/.config/ 
-    cp -r /config_files/wofi/ ~/.config/
-    cp -r /config_files/wlogout/ ~./config/
-    cp -r /config_files/fastfetch/ ~/.config/
+    cp -r config_files/alacritty/ ~/.config/ 
+    cp -r config_files/wofi/ ~/.config/
+    cp -r config_files/wlogout/ ~./config/
+    cp -r config_files/fastfetch/ ~/.config/
     ```
     
     Use `WIN` + `D` try run Wofi Also check on alacritty for some color tweak
