@@ -38,10 +38,11 @@ Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak insta
 3. More .config 
     ![pip_fetch](assets/pip_fetch.png)
     ![Wofi_setup](assets/pip_wofi.png)
+    in git folder
     ```
     cp -r config_files/alacritty/ ~/.config/ 
     cp -r config_files/wofi/ ~/.config/
-    cp -r config_files/wlogout/ ~./config/
+    cp -r config_files/wlogout/ ~/.config/
     cp -r config_files/fastfetch/ ~/.config/
     ```
     
