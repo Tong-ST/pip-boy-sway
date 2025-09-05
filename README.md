@@ -62,13 +62,14 @@ This section you will do more customization for finishing touch this setup
         - In firefox also install `sidebery` for vertical bar, `tabliss` for new-tab show-off wallpaper like mine
         - You don't need any color theme in firefox just leave it system theme - auto, Hackerer theme we use at GTK also cover firefox
 
-    - Alternatively, Just install Firefox from `Flatpak` you'll get newer version will have Verticle Bar, built-in, Also Use Extension call `Firefox Color` And use this [PresetColor](https://color.firefox.com/?theme=XQAAAAIhAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrv2SwuLIs3iGA6UYYFlQ3E_J3J--LFIfjU9jzbvZ81lXtVpqJS-43xQcdcMSfbvU-16xKAgrIzMbI88TJK_FgW48SuRf7gBtUGC_KU3zgNb0S1qR0ySXK5j2PdQdrnswcrdMIqonp8T4P17tL8bqP2QXFX4Jdn6GcPzvs4Sf1l72vqKeCRV_yQFck8QV8wo5CuHT4rnwfwSla2_4Y0sAA) That I Theming to match my setup, Clean and easy than method above, It's look something like this :
+    - Alternatively, Just install Firefox from `Flatpak` you'll get newer version will have Vertical Bar, built-in, Also Use Extension call `Firefox Color` And use this [PresetColor](https://color.firefox.com/?theme=XQAAAAIhAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrv2SwuLIs3iGA6UYYFlQ3E_J3J--LFIfjU9jzbvZ81lXtVpqJS-43xQcdcMSfbvU-16xKAgrIzMbI88TJK_FgW48SuRf7gBtUGC_KU3zgNb0S1qR0ySXK5j2PdQdrnswcrdMIqonp8T4P17tL8bqP2QXFX4Jdn6GcPzvs4Sf1l72vqKeCRV_yQFck8QV8wo5CuHT4rnwfwSla2_4Y0sAA) That I Theming to match my setup, Clean and easy than method above, It's look something like this :
     ![pip_fox_cleaner_version](assets/pip_fox_cleaner.png)
 3. Update Grub-theme (Optional But Cool~)
     - I also found really awesome grub theme that match fallout terminal style see here [Fallout Grub](https://www.pling.com/p/1230882/)
 
 
-1. Go adjust for your peference those .config `nano ~/.config/sway/config`
+# AFTER INSTALL
+1. Go adjust for your preference those .config `nano ~/.config/sway/config`
     - Sway config also has `theme.conf` that adjust window color stuff & `workspace.conf` that for workspace control
 
 2. Make it your currently button on waybar is set to run my program, So some button might not work for you `nano ~/.config/waybar/config` & `style.css` as well
@@ -77,8 +78,24 @@ This section you will do more customization for finishing touch this setup
 3. Just found really cool font that go really well with this setup call `Fixedsys Excelsior 3.01` It's good i promised but you have to change config by yourself first, It might be good to get familiar with all the config, For waybar you might have to adjust margin stuff till it match..
 
     - So, Update for some config of `waybar` for this Fixedsys Font just use config in folder `config_fixedsys_font` instead.
-    - Here's The look, RAD symbol got overwriten, Use warning sign for Now, ![font_sample](assets/pip_fixedsys_font.png)
+    - Here's The look, RAD symbol got overwritten, Use warning sign for Now, ![font_sample](assets/pip_fixedsys_font.png)
 4. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
+
+5. Some more sound effect, I'm using on laptop that `Keyboard` sound not that great, So Let's make it even more nostalgia!
+    - For my specific setup I use `bucklespring` It will simulate keyboard spring sound from retro PC, also like Mechanical Keyboard now a day, So if you already have good keyboard sound you can skip it
+    - To install in debian + wayland you have to build from source to make it system-wide
+        - `git clone https://github.com/zevv/bucklespring && cd ./bucklespring/`
+        - `sudo apt-get install libopenal-dev libalure-dev libxtst-dev pkg-config libinput-dev`
+        - `make libinput=1`
+        - `sudo usermod -aG input YOURUSERNAME` might need to logout and login back
+        - Then in git bucklespring folder use `./buckle` to run 
+        
+        - Or use a custom script to autostart in sway config add this `exec /home/USERNAME/scripts/buckle_up.sh`
+            - `mkdir scripts/`
+            - Copy `buckle_up.sh` script from my Git Drop into ~/scripts/
+            - `nano buckle_up.sh` Might need to adjust path of your bucklespring Git where your clone to
+            - That's it try logout and login back to see keyboard sound effect
+            
 
 - My Default Key-Binding
     - ``` WIN+SHIFT+E ``` = logout 
