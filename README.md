@@ -61,12 +61,12 @@ This section you will do more customization for finishing touch this setup
     - First thing for firefox i use [Textfox](https://github.com/adriankarlen/textfox) theme as base You can see installation guide on his git and use `chrome, user.js` from me, Don't forget to give a STARTS for Textfox :D 
         - In firefox also install `sidebery` for vertical bar, `tabliss` for new-tab show-off wallpaper like mine
         - You don't need any color theme in firefox just leave it system theme - auto, Hackerer theme we use at GTK also cover firefox
-    - In Firefox window/UI might be greenery but it doesn't effect your main web-surfing that much
 
+    - Alternatively, Just install Firefox from `Flatpak` you'll get newer version will have Verticle Bar, built-in, Also Use Extension call `Firefox Color` And use this [PresetColor](https://color.firefox.com/?theme=XQAAAAIhAQAAAAAAAABBqYhm849SCia2CaaEGccwS-xMDPrv2SwuLIs3iGA6UYYFlQ3E_J3J--LFIfjU9jzbvZ81lXtVpqJS-43xQcdcMSfbvU-16xKAgrIzMbI88TJK_FgW48SuRf7gBtUGC_KU3zgNb0S1qR0ySXK5j2PdQdrnswcrdMIqonp8T4P17tL8bqP2QXFX4Jdn6GcPzvs4Sf1l72vqKeCRV_yQFck8QV8wo5CuHT4rnwfwSla2_4Y0sAA) That I Theming to match my setup, Clean and easy than method above 
 3. Update Grub-theme (Optional But Cool~)
     - I also found really awesome grub theme that match fallout terminal style see here [Fallout Grub](https://www.pling.com/p/1230882/)
 
-## WHAT'S NEXT
+
 1. Go adjust for your peference those .config `nano ~/.config/sway/config`
     - Sway config also has `theme.conf` that adjust window color stuff & `workspace.conf` that for workspace control
 
