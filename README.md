@@ -16,7 +16,7 @@ Package you may need to make it functional with my setup. (I will assume you alr
 > Others Distro than Debian base might have to find package by yourself just make sure we on wayland like Sway/Waybar for others like Hyprland/Waybar you may need to workaround for main config.. 
 ```
 sudo apt install waybar wofi alacritty swaybg swaylock wlogout \
-ranger calcurse pavucontrol htop thunar network-manager \
+ranger calcurse pavucontrol htop thunar network-manager network-manager-gnome\
 fonts-font-awesome fonts-roboto wlsunset lxappearance
 ```
 Optional for laptop, You may need some flatpak app like `tlpui` : `flatpak install flathub com.github.d4nj1.tlpui` I link with battery button-click
@@ -83,7 +83,7 @@ This section you will do more customization for finishing touch this setup
 4. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
 
 5. Some more sound effect, I'm using on laptop that `Keyboard` sound not that great, So Let's make it even more nostalgia!
-    - For my specific setup I use `bucklespring` It will simulate keyboard spring sound from retro PC, also like Mechanical Keyboard now a day, So if you already have good keyboard sound you can skip it
+    - For my specific setup I use [bucklespring](https://github.com/zevv/bucklespring) It will simulate keyboard spring sound from retro PC, also like Mechanical Keyboard now a day, So if you already have good keyboard sound you can skip it
     - To install in debian + wayland you have to build from source to make it system-wide
         - `git clone https://github.com/zevv/bucklespring && cd ./bucklespring/`
         - `sudo apt-get install libopenal-dev libalure-dev libxtst-dev pkg-config libinput-dev`
@@ -96,7 +96,7 @@ This section you will do more customization for finishing touch this setup
             - Copy `buckle_up.sh` script from my Git Drop into ~/scripts/
             - `nano buckle_up.sh` Might need to adjust path of your bucklespring Git where your clone to
             - That's it try logout and login back to see keyboard sound effect
-            
+    - Alternatively, Use keyboard sim like `mechvibess I think it better in general but i couldn't find way to use system-wide yet, It only work on VScode, and some app for me I think it's maybe wayland thing
 
 - My Default Key-Binding
     - ``` WIN+SHIFT+E ``` = logout 
@@ -110,6 +110,17 @@ This section you will do more customization for finishing touch this setup
     ![pip_color](assets/pip_color.png)
 
 **So, Now you an officially VAULT-TEC employee like mine, have fun!**
+
+
+## BUG FOUND!
+- I have run into sound problem with bucklespring keyboard sound sim but able to get alway with this config in `~/.alsoftrc` (create if not yet exist) In Bucklespring repo set period_size = 32 (But it not work for me I can't go below 128) Didn't notice lag So i keep it 128
+    ```
+    period_size = 128
+    periods = 4
+    hrtf = true
+    allow-move = true
+    ```
+    - Alternatively If still got issue like sound stop working try switch sound driver, To do `sudo nano /etc/modprobe.d/disable-sof.conf` add `options snd-intel-dspcfg dsp_driver=1` or change from value 3 to 1, that will force to run on Built-in audio and it less feature but more stable
 
 ### Thanks & Support
 - [Hackerer](https://www.pling.com/p/2010119/) Awesome GTK Theme that match well with my setup

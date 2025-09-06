@@ -25,7 +25,7 @@
 
   "custom/radio": {
     "format": "RADIO",
-    "on-click": "flatpak run com.rafaelmardojai.Blanket",
+    "on-click": "flatpak run com.", // Example for a music player `Gapless` to install `flatpak install flathub com.github.neithern.g4music`rafaelmardojai.Blanket",
   },
 
   "custom/editor": {
