@@ -80,6 +80,16 @@ This section you will do more customization for finishing touch this setup
 
     - So, Update for some config of `waybar` for this Fixedsys Font just use config in folder `config_fixedsys_font` instead.
     - Here's The look, RAD symbol got overwritten, Use warning sign for Now, ![font_sample](assets/pip_fixedsys_font.png)
+    - To Fix update RAD Symbol just I just use symbol from `Nerd Font`instead of font awesome before..
+        - You can download from nerdfont website and install by copy font to like `~/.local/share/fonts` and `fc-cache -fv` after that
+        - Or install like JetBrainNerdFont
+            ```
+            wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+            cd ~/.local/share/fonts
+            unzip JetBrainsMono.zip
+            rm JetBrainsMono.zip
+            fc-cache -fv
+            ```
 4. Make it more Awesome! like you can set wallpaper for each workspace, Just google for how to adjust this & that you'll be good to go..
 
 5. Some more sound effect, I'm using on laptop that `Keyboard` sound not that great, So Let's make it even more nostalgia!

@@ -36,7 +36,7 @@
     "on-click": "alacritty -e calcurse"
   },
   "cpu": {
-    "format": " RAD {usage}/100",
+    "format": "󰐼 RAD {usage}/100",
   },
   "memory": {
     "format": "AP {avail:0.0f}/{total:0.0f} ",
