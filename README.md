@@ -114,7 +114,9 @@ This section you will do more customization for finishing touch this setup
 Config files, `cp config_files/rofi ~/.config` and also `sudo cp config_files/rofi/* /usr/share/rofi/themes/` or `/usr/local/share/rofi/theme` (if you build from source) So you can also change within rofi theme selector, Or you can change which theme in .config rofi manually
     - Now rofi support wayland, Let's try install normally via system repo first `sudo apt install rofi` and try to run on your wayland by just `rofi -show drun` If it work just use your rofi system version
     
-    - But if it not work try to build from source, if have experience building from source just see in there [rofi official](https://github.com/davatorium/rofi) install guide, But if you new like me, I use these script to install dependencies and build `Debian Package specific here`
+    - But a flag for with default debian package v.1.7.5 It seem window mode doesn't work, Build with update release fix my problem, For build read section below
+    
+    - Build from source, if have experience building from source just see in there [rofi official](https://github.com/davatorium/rofi) install guide, But if you new like me, I use these script to install dependencies and build `Debian Package specific here`
         ```
         sudo apt install -y \
         build-essential meson ninja-build pkg-config \
