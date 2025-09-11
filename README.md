@@ -111,8 +111,10 @@ This section you will do more customization for finishing touch this setup
 
 6. As i made i3-pip-boy config I also theme on rofi and try to integrate to this sway theme
 ![Rofi_boy_green](assets/Rofi_pip_green.png)
-it's work, But also need some extra work for my debian setup, I have to use [rofi-wayland fork](https://github.com/A417ya/rofi-wayland) Build it from source and you can just copy config `cp config_files/rofi ~/.config` and also `sudo cp config_files/rofi/* /usr/local/share/rofi/themes/` drop in rofi themes folder so you can also change within rofi theme selector
-    - So to install rofi-wayland if have experience building from source just see in there rofi-wayland install guide, But if you new like me, I use these script to install dependencies and build from source `Debian Package specific here`
+Config files, `cp config_files/rofi ~/.config` and also `sudo cp config_files/rofi/* /usr/share/rofi/themes/` or `/usr/local/share/rofi/theme` (if you build from source) So you can also change within rofi theme selector, Or you can change which theme in .config rofi manually
+    - Now rofi support wayland, Let's try install normally via system repo first `sudo apt install rofi` and try to run on your wayland by just `rofi -show drun` If it work just use your rofi system version
+    
+    - But if it not work try to build from source, if have experience building from source just see in there [rofi official](https://github.com/davatorium/rofi) install guide, But if you new like me, I use these script to install dependencies and build `Debian Package specific here`
         ```
         sudo apt install -y \
         build-essential meson ninja-build pkg-config \
@@ -131,9 +133,10 @@ it's work, But also need some extra work for my debian setup, I have to use [rof
         ninja -C build
         sudo ninja -C build install
         ```
-        Got error with these script maybe ask ChatGPT,
-        And then use `rofi -v` to verify version if you got version mean installation done
+        Got error with these script maybe ask ChatGPT, See official installation guide
+        Then use `rofi -v` to verify version if you got version mean installation done
         and ready to use, to test just `rofi -show drun` and add to your sway config instead of wofi
+
         - Also for this rofi theme it's kinda rely on image editor (GIMP) If you wish to change thing I also put working gimp file in `assets/Rofi_pip_creator.xcf` Use gimp to see inside and edit it!
 
     
