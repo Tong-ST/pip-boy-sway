@@ -125,9 +125,9 @@ it's work, But also need some extra work for my debian setup, I have to use [rof
         libxext-dev
         ```
         ```
-        git clone --recursive https://github.com/A417ya/rofi-wayland.git
-        cd rofi-wayland
-        meson setup build -Dwayland=enabled
+        git clone https://github.com/davatorium/rofi.git
+        cd rofi
+        meson setup build
         ninja -C build
         sudo ninja -C build install
         ```
