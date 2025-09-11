@@ -6,6 +6,7 @@
 
 *So, if you still want to join VAULT-TEC let's jump right in!*
 ![fallout_pipboy_desktop](assets/pip_main.png)
+Now, Also have [i3wm/x11](https://github.com/Tong-ST/pip-boy-i3/) SPIN!
 
 ## BEFORE INSTALL
 
@@ -108,7 +109,35 @@ This section you will do more customization for finishing touch this setup
             - That's it try logout and login back to see keyboard sound effect
     - Alternatively, Use keyboard sim like `mechvibess I think it better in general but i couldn't find way to use system-wide yet, It only work on VScode, and some app for me I think it's maybe wayland thing
 
-- My Default Key-Binding
+6. As i made i3-pip-boy config I also theme on rofi and try to integrate to this sway theme
+![Rofi_boy_green](assets/Rofi_pip_green.png)
+it's work, But also need some extra work for my debian setup, I have to use [rofi-wayland fork](https://github.com/A417ya/rofi-wayland) Build it from source and you can just copy config `cp config_files/rofi ~/.config` and also `sudo cp config_files/rofi/* /usr/local/share/rofi/themes/` drop in rofi themes folder so you can also change within rofi theme selector
+    - So to install rofi-wayland if have experience building from source just see in there rofi-wayland install guide, But if you new like me, I use these script to install dependencies and build from source `Debian Package specific here`
+        ```
+        sudo apt install -y \
+        build-essential meson ninja-build pkg-config \
+        libglib2.0-dev libpango1.0-dev libcairo2-dev \
+        libxkbcommon-dev libxkbcommon-x11-dev \
+        libgdk-pixbuf-xlib-2.0-dev libx11-xcb-dev libxcb1-dev \
+        libxcb-ewmh-dev libxcb-icccm4-dev libxcb-randr0-dev \
+        libxcb-cursor-dev libxcb-xinerama0-dev libstartup-notification0-dev \
+        wayland-protocols libwayland-dev libwayland-cursor0 \
+        libxext-dev
+        ```
+        ```
+        git clone --recursive https://github.com/sardemff7/rofi-wayland.git
+        cd rofi-wayland
+        meson setup build -Dwayland=enabled
+        ninja -C build
+        sudo ninja -C build install
+        ```
+        Got error with these script maybe ask ChatGPT,
+        And then use `rofi -v` to verify version if you got version mean installation done
+        and ready to use, to test just `rofi -show drun` and add to your sway config instead of wofi
+        - Also for this rofi theme it's kinda rely on image editor (GIMP) If you wish to change thing I also put working gimp file in `assets/Rofi_pip_creator.xcf` Use gimp to see inside and edit it!
+
+    
+    My Default Key-Binding
     - ``` WIN+SHIFT+E ``` = logout 
     - ``` WIN+SHIFT+W ``` = Close window/application
     - ``` WIN+SHIFT+C ``` = Reload sway config file to see changes (Error might show, better fix what's wrong before move on)
